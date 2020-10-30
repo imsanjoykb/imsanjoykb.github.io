@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(254, 255, 240);
+}
+
+nav {
+  font-size: 25px;
+  font-weight: bolder;
+
+  margin-left: 100px;
+  padding: 70px;
+}
+
+p {
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+h3 {
+  margin-top: 30px;
+  font-weight: bolder;
+}
+
+.footer {
+  text-align: center;
+  background-color: inherit;
+}
+
+.content {
+  background-color: inherit;
+  padding: 10px;
+
+}
+.panel {
+  width: 100%;
+  overflow: auto;
+  display: inline-block;
+  font-size:small;
+}
+.mnWidth500px {
+  min-width: 500px;
+}
+.outlined {
+  border: 1px solid blue;
+}
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+.fa {
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.belowNav {
+  height: 50px; /* gap below navbar */
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -45px; /* the bottom margin is the negative value of the footer's height */
+}
