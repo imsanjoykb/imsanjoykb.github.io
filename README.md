@@ -3,7 +3,7 @@
 [![Stars](https://img.shields.io/github/stars/AmitHasanShuvo/AmitHasanShuvo.github.io.svg?style=social)](https://github.com/AmitHasanShuvo/AmitHasanShuvo.github.io/stargazers)
 
 
-# Author: Kazi Amit Hasan
+# Author: Sanjoy Biswas
 
 Department of Electrical & Electronic Engineering, </br>
 Sylhet Engineering College (SEC) </br>
