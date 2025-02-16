@@ -1,26 +1,80 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+import React from "react";
+import {
+  FaTwitter,
+  FaGithub,
+  FaLinkedin,
+  FaResearchgate,
+} from "react-icons/fa";
+import { AiFillGoogleCircle } from "react-icons/ai";
 
-<footer class="footer">
-  <div class="container">
-    <hr>
-    <div class="row">
-      <div class="col-sm-6 text-muted">
-
-        <p>&copy; 2024 Mohammed Latif Siddiq</p>
-
+const Footer = () => {
+  return (
+    <footer className="bg-gray-100 py-4 border-t border-gray-300">
+      <div className="container mx-auto">
+        <hr className="my-4" />
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="text-gray-600 mb-4 md:mb-0">
+            <p>&copy; 2024 Sanjoy Kumar</p>
+          </div>
+          <div>
+            <ul className="flex space-x-4 text-gray-600">
+              <li>
+                <a
+                  href="https://twitter.com/imsanjoykb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-600"
+                >
+                  <FaTwitter size={24} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/imsanjoykb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-600"
+                >
+                  <FaGithub size={24} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://scholar.google.com/citations?user=oGZL0uIAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-600"
+                >
+                  <AiFillGoogleCircle size={24} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/imsanjoykb/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-600"
+                >
+                  <FaLinkedin size={24} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.researchgate.net/profile/imsanjoykb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-600"
+                >
+                  <FaResearchgate size={24} />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-6">
+    </footer>
+  );
+};
 
-        <!-- Social professional networking icons -->
-        <ul class="social-icons pull-right">
-          <li><a href="https://twitter.com/lsiddiqsunny" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-          <li><a href="https://github.com/lsiddiqsunny" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
-          <li><a href="https://scholar.google.com/citations?user=oGZL0uIAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-2x"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/lsiddiqsunny/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-          <li><a href="https://www.researchgate.net/profile/Latif_Sunny" target="_blank"><i class="fab fa-researchgate fa-2x"></i></a></li>
-        </ul>
+export default Footer;
 
-      </div>
-    </div>
-  </div>
-</footer><!-- jQuery Javascript Library -->
