@@ -1,0 +1,291 @@
+%!TEX program = pdflatex
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=0.6in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\definecolor{linkc}{RGB}{0,150,214}
+\hypersetup{colorlinks=true,urlcolor=linkc,linkcolor=linkc,
+  pdftitle={Sanjoy Kumar -- Curriculum Vitae},pdfauthor={Sanjoy Kumar}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.0}
+
+\titleformat{\section}{\large\bfseries\scshape}{}{0pt}{}[\vspace{-5pt}\rule{\linewidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\setlist[itemize]{leftmargin=1.6em,itemsep=0.5pt,topsep=1.5pt,parsep=0pt,partopsep=0pt}
+
+% \entry{bold left}{bold right}
+\newcommand{\entry}[2]{\vspace{2pt}\par\noindent\textbf{#1}\hfill\textbf{#2}\par\nopagebreak}
+% \sub{italic left}{italic right}
+\newcommand{\sub}[2]{\noindent\hspace{0.8em}\textit{#1}\hfill\textit{#2}\par\nopagebreak}
+\newcommand{\supv}[1]{\noindent\hspace{0.8em}\textit{\textbf{Supervisor}: #1}\par\nopagebreak}
+% [Link] helper:  \lk{url}{text}
+\newcommand{\lk}[2]{[\href{#1}{#2}]}
+
+\begin{document}
+
+%================ HEADER ================
+\begin{center}
+  {\Huge\bfseries\scshape Sanjoy Kumar}\\[5pt]
+  {\normalsize +1 806 544 2763 $\mid$ \href{mailto:sanjoy.eee32@gmail.com}{imsanjoykb@gmail} $\mid$ \href{https://github.com/imsanjoykb}{GitHub} $\mid$ Lubbock, Texas}
+\end{center}
+\vspace{-6pt}
+
+%================ EDUCATION ================
+\section{Education}
+\entry{Texas Tech University}{2026--Present}
+\sub{Doctor of Philosophy (Ph.D.) in Applied Mathematics (Engineering Math)}{Completing 14 Credits}
+\sub{Research Areas: Machine Learning, Computer Vision, Physical AI, Robotics}{}
+\vspace{3pt}
+\entry{Shahjalal University of Science \& Technology}{2016--2020}
+\sub{Bachelor of Science in Electrical \& Electronic Engineering}{CGPA:3.56/4.00}
+\sub{Research Areas: Machine Learning, Computer Vision, Signal \& Image Processing, Robotics \& Autonomous System}{}
+
+%================ RESEARCH EXPERIENCE ================
+\section{Research Experience}
+
+\entry{Research Assistant $\bullet$ High-Performance Computing Center, Texas Tech University}{Apr'2024--Present}
+\supv{Dr Yifan Wang, Assistant Professor, Dept of Mathematics \& Statistics, Texas Tech University}
+\begin{itemize}
+  \item Build a complete pipeline that treats a \textbf{hyperuniform micropost microfluidic device as a biomechanical encoder} immersed-boundary simulations generate size- and elasticity-dependent cell trajectories, classified by sequence models.
+  \item Developed hybrid physics-informed sequence models that embed fluid--structure and PDE residuals directly into the network, enabling accurate multi-step trajectory \& simultaneous prediction of morphological descriptors (elasticity, shape deformation, aspect ratio).
+  \item Established a clear design principle for \textbf{passive microfluidic separators: cell size drives the dominant}, history-dependent lateral separation, elasticity acts as a secondary modulator providing concrete guidance \textbf{for optimizing label-free rare-cell isolation devices.}
+  \item Created a transferable SciML framework that couples multiphysics simulation with data-driven surrogates, real-time trajectory-based phenotyping for \textbf{diagnostic microfluidics, biomedical sensing, microrobotic systems interacting with deformable cells.}
+\end{itemize}
+\hspace{1.6em}\lk{https://link.springer.com/chapter/10.1007/978-3-031-94898-5_34}{Paper-1} \lk{https://onlinelibrary.wiley.com/doi/10.1002/cnm.70037}{Paper-2} \lk{https://drive.google.com/file/d/1UfsILbMxbepeqWYiI7ZbkmEcKGcu33Yc/view?usp=sharing}{Paper-3} \lk{https://drive.google.com/file/d/1usXiM33oELEwZXtblLrIkoFmStO5hNIO/view?usp=sharing}{Paper-4}
+
+\entry{Research Collaborator $\bullet$ Center for Research \& Innovation, RPSU}{Sep' 2025--' Aug'2026}
+\supv{Shovan Kumar Paul, Assistant Professor, Dept of Computer Science \& Engineering, R.P. Shaha University, BD}
+\begin{itemize}
+  \item Developed a \textbf{Physics-Informed Neural Dynamics (PIND) architecture that combines analytical multi-body rigid-body models} with structured residual networks for actuator compliance, soft contact forces, trained under momentum conservation, friction-cone.
+  \item Embedded the continuous-time learned model into a real-time \textbf{Nonlinear Model Predictive Control (NMPC) framework} solved Seq Quadratic Programming, achieving closed-loop locomotion tracking on the Unitree Go1 using only 10\% of the training data.
+  \item Designed \textbf{Port-Hamiltonian residual network that structurally guarantees mechanical passivity and coupled} with High-Order Control Barrier Func, adaptive conformal prediction to create quadratic-program safety filter for reinforcement learning policies.
+  \item Established a unified approach for data-efficient dynamics learning and certified safe control that bridges physics-informed machine learning with model-based predictive control, \textbf{safety-critical reinforcement learning for legged and contact-rich robotic systems.}
+\end{itemize}
+\hspace{1.6em}\lk{https://drive.google.com/file/d/1JgQ5MCCtngnDuA6jOblR9TN_yVb0A4v6/view?usp=sharing}{Paper-1} \lk{https://drive.google.com/file/d/1NxOR6ds-d3xFB5gi_pmYLFTv_YaVoGMo/view}{Paper-2}
+
+\entry{Research Assistant $\bullet$ Brandon University}{Dec' 2023--' Oct'2025}
+\supv{Dr Gautam Srivastava, Professor, Dept of Computer Science \& Mathematics, Brandon University, Canada}
+\begin{itemize}
+  \item Developed a unified multimodal fusion architecture that \textbf{jointly processes visual, textual, and behavioral streams} via a learned cross-modal attention mechanism, analogous to sensor-fusion pipelines used in mobile robots and autonomous systems.
+  \item Introduced a \textbf{GRU-based neural narrative tracker with specialized memory banks} that maintains long-horizon conversational state, enabling coherent multi-turn decision making under evolving user intent.
+  \item Established a reusable architecture pattern that combines LLM reasoning, formal optimization objectives, and human-centered interfaces, enabling scalable deployment of adaptive AI systems in data-intensive and safety-sensitive environments.
+\end{itemize}
+\hspace{1.6em}\lk{https://drive.google.com/file/d/1r5o2D66ZTg2VrMklkl8sxKoeGuwLQEVY/view}{Paper-1} \lk{https://drive.google.com/file/d/1NxOR6ds-d3xFB5gi_pmYLFTv_YaVoGMo/view}{Paper-2} \lk{https://drive.google.com/file/d/1ueDIfEE3TNvnEfAcWhqCBkrGW8HlX74C/view?usp=sharing}{Paper-3}
+
+\entry{Research Collaborator $\bullet$ Florida International University}{Sep' 2021--Feb' 2022}
+\supv{Dr Naphtali Rishe, Professor, Dept of Computer Science, Florida International University}
+\begin{itemize}
+  \item Investigated \textbf{deep learning-based image reconstruction and computer vision methods} for detecting and removing cloud-affected regions in high-resolution satellite imagery.
+  \item Explored \textbf{Deep Image Prior and convolutional neural network architectures} for unsupervised image restoration, addressing image denoising, inpainting, and reconstruction without requiring large, labeled training datasets.
+  \item Analyzed \textbf{spatial, spectral, and multisource remote-sensing information} for robust visual perception and image reconstruction, with applications to intelligent sensing and autonomous vision systems.
+\end{itemize}
+\hspace{1.6em}\lk{https://ipsitransactions.org/journals/papers/tir/2023jul/p3.php}{Paper-1}
+
+\entry{Research Assistant $\bullet$ Shahjalal University of Science \& Technology}{May' 2020--Feb' 2021}
+\supv{Shahid Iqbal, Assistant Professor, Dept of Electrical Engineering, Shahjalal University of Science \& Technology}
+\begin{itemize}
+  \item Developed as \textbf{IoT-based remote health monitoring system} integrating NTC temperature and MAX30102 heart-rate/SpO2 Sensors with EXP32 microcontroller for continuous patient monitoring.
+  \item Designed real-time data accusation and transmission pipeline using WIFI/ESP32 to process, transmit and store on server.
+  \item Implemented web-based visual and patient management interface enabling physicians to remotely monitor records.
+\end{itemize}
+\hspace{1.6em}\lk{https://drive.google.com/file/d/15x1p7n6dDvtg2hj9ObGUxymlGAqeHCxi/view}{Paper-1}
+
+%================ PROFESSIONAL EXPERIENCE ================
+\section{Professional Experience}
+
+\entry{Sr Machine Learning Engineer $\bullet$ Bista Solutions Inc, USA (Bangladesh Office)}{Apr' 2024 -- Aug'2026}
+\begin{itemize}
+  \item \textbf{Architected and optimized production-scale AI systems (LLM and visionLLM)} using applying parameter-efficient fine-tuning, quantization, inference optimization to develop domain-adapted intelligent systems for enterprise decision-support and automation.
+  \item \textbf{Developed computer-vision and multimodal AI solutions} integrating image, text, structured data for automated visual analysis, recognition, classification, inspection workflows; deployed vision-driven automation for enterprise and manufacturing processes.
+  \item Designed \textbf{multi-agent intelligent systems} combining multimodal perception, retrieval-augmented generation, high-dimensional embeddings, tool execution, and workflow orchestration to transform complex multi-step processes into automated AI-driven decision.
+  \item \textbf{Engineered ML/GenAI-based manufacturing automation systems}, integrating computer vision, ML, and enterprise data to automate industrial workflows, process analysis, operational decision support; led end-to-end development \& production deployment.
+\end{itemize}
+
+\entry{Sr Machine Learning Engineer $\bullet$ DataSense, iSocial Limited}{Feb' 2022 -- Mar' 2024}
+\begin{itemize}
+  \item \textbf{Researched and fine-tuned multilingual transformer architectures} using domain-specific datasets, achieving \textbf{88\% classification accuracy} across seven languages and integrating the resulting models into production conversational AI systems.
+  \item \textbf{Developed computer vision and deep learning solutions} for automated image analysis, incorporating convolutional neural networks and representation-learning techniques for visual classification and intelligent data-processing workflows.
+  \item \textbf{Engineered and deployed production MLOps infrastructure} using AWS SageMaker, MLflow, and DVC for reproducible experimentation, model registry, data versioning, and scalable model deployment.
+\end{itemize}
+
+\entry{Machine Learning Engineer $\bullet$ IntelSense AI Ltd, Bangladesh}{Apr' 2021 -- Jan' 2022}
+\begin{itemize}
+  \item \textbf{Engineered end-to-end machine learning and computer vision pipelines} spanning data acquisition, image preprocessing, feature extraction, model development, optimization, and performance analysis; identified model failure.
+  \item \textbf{Designed and deployed edge-based computer vision workflows on NVIDIA Jetson}, integrating deep learning inference with image acquisition and preprocessing to enable computationally efficient, hardware-aware intelligent vision applications.
+  \item \textbf{Architected a hardware--software data acquisition and automation pipeline} integrating handheld scanners, imaging devices, and printers with ML/CV processing components; automated device-data retrieval, visual/document analysis.
+\end{itemize}
+
+\entry{Data Scientist $\bullet$ PIPELINE Security Ltd, Japan (Bangladesh Office)}{May' 2020 -- Mar' 2021}
+\begin{itemize}
+  \item \textbf{Optimized end-to-end computational and ML workflows}, identifying system bottlenecks and redundant processing stages to achieve a \textbf{12\% improvement in overall project efficiency}.
+  \item \textbf{Designed and implemented a real-time hardware data-acquisition pipeline} for collecting and processing measurements from \textbf{multiple heterogeneous sensors}, establishing the foundation for sensor-driven intelligent systems and automated decision-making.
+  \item Developed and evaluated \textbf{machine learning pipelines spanning regression, classification} complex sensor and operational datasets.
+\end{itemize}
+
+%================ TEACHING ================
+\section{Teaching Experience}
+
+\entry{Graduate Assistantship (TA) $\bullet$ Texas Tech University}{Sep'2026 -- Present}
+\begin{itemize}
+  \item Support undergraduate mathematics instruction through tutoring, problem-solving, and student mentoring.
+  \item Assist with course-related academic activities and provide guidance in mathematical concepts and computational methods.
+  \item Facilitate students' understanding of mathematical and computational concepts through one-on-one and small-group instruction, fostering analytical and problem-solving skills.
+\end{itemize}
+
+\entry{Instructor (Machine Learning Course) $\bullet$ Infinity Flame Soft Institute, Bangladesh}{Sep' 2024 -- June' 2021}
+\begin{itemize}
+  \item Taught \textbf{150+ students} in machine learning, covering supervised and unsupervised learning, model evaluation, feature engineering, and practical ML workflows using \textbf{Python and Scikit-learn}.
+  \item Delivered hands-on instruction through coding exercises, assignments, and real-world projects, guiding students in building, training, evaluating, and improving machine learning models.
+\end{itemize}
+
+\entry{Mentor $\bullet$ SEC Robotics Lab, SEC, SUST}{Apr' 2019 -- Aug' 2020}
+\begin{itemize}
+  \item Mentored students in \textbf{robotics, embedded systems, and programming}, providing hands-on guidance in designing, building, and testing robotic systems.
+  \item Guided student teams in \textbf{microcontroller programming, sensor integration, motor control, and hardware--software interfacing} for project developments.
+\end{itemize}
+
+%================ PEER REVIEWING ================
+\section{Peer Reviewing Experience}
+\textbf{[1]} Journal of Cancer and Tumor International \lk{https://drive.google.com/file/d/1h58FLV38BVJFd4Ngly_3Y_V-F3opbsV-/view?usp=sharing}{Certificate1} \lk{https://drive.google.com/file/d/1bF3GxcQvTwqvMKzYDjPdK0xZH2Q-9QRE/view?usp=sharing}{Certificate2} \lk{https://drive.google.com/file/d/15HjUQrPFB5HZVO8cGt8ltZbXImTfYXOb/view?usp=sharing}{Certificate3} \lk{https://drive.google.com/file/d/1rOhClSW2ovZWgUmtyEjgh_npgD62BjZ-/view?usp=sharing}{Certificate4}\par
+\textbf{[2]} Archives of Current Research \lk{https://drive.google.com/file/d/12Ud_tFtlggTNG0q_UprFGWyBWS_2fX1Z/view?usp=sharing}{Certificate}\par
+\textbf{[3]} Asian Journal of Case Report in Surgery \lk{https://drive.google.com/file/d/15GHSXhpIpMjadGQYdE5VGt6iWk6UDrgo/view?usp=sharing}{Certificate}\par
+\textbf{[4]} Asian Journal of Research in Surgery \lk{https://drive.google.com/file/d/1Tn8OxOPY8EFIHFUd-Zruj9A6GnYEYQJL/view?usp=sharing}{Certificate}\par
+\textbf{[5]} Asian Oncology Research Journal \lk{https://drive.google.com/file/d/10yM7iBm63XI9vLxD13SaCs3BIVj2kqsv/view?usp=sharing}{Certificate}\par
+\textbf{[6]} Book Chapter Review: \textit{Clinicopathological Profile of Breast Cancer in India: A Five-year Retrospective Case Series.} \lk{https://drive.google.com/file/d/1uV54JweTS_JzuPjE2pNYkwLaPgZAQQ8v/view?usp=sharing}{Certificate}\par
+\textbf{[7]} Book Chapter Review: \textit{Breast Carcinoma: A Global Perspective on Prevalence and Impact}. \lk{https://drive.google.com/file/d/1-_Y0iCUIlAubEtfYWZYgZVd5Q9n7Xt9G/view?usp=sharing}{Certificate}\par
+
+%================ PUBLICATIONS ================
+\section{Publications}
+\begin{itemize}
+  \item \textbf{Sanjoy Kumar} and Yifan Wang, ``Physics-Informed Fourier Basis Neural Networks for PDEs: Architecture, Analysis, and Applications to Heat, Allen-Cahn, Burgers' and Kovasznay Flow Equations'', \textit{International Journal of Computer Mathematics, 2026}. [2\textsuperscript{nd} Reviewer Feedback Submitted] \lk{https://drive.google.com/file/d/1UfsILbMxbepeqWYiI7ZbkmEcKGcu33Yc/view?usp=sharing}{Link}
+  \item \textbf{Sanjoy Kumar,} Shovan Kumar Paul, Md Monir Hossain, ``Port-Hamiltonian Residual Learning with Adaptive Conformal Barrier Filters for Safe Robot Reinforcement Learning'', \textit{2026 8th International Conference on Control and Robotics, Japan. [Peer Reviewed]} \lk{https://drive.google.com/file/d/1JgQ5MCCtngnDuA6jOblR9TN_yVb0A4v6/view?usp=sharing}{Link}
+  \item \textbf{Sanjoy Kumar,} Shovan Kumar Paul, Lula Babole Alphonse-Roger ``Physics-Informed Residual Neural Dynamics for Data-Efficient Predictive Control in Legged Robots'', \textit{2026 2nd International Conference on Advanced Computing \& Intelligent Robotics Applications. [Peer Reviewed]} \lk{https://drive.google.com/file/d/1Eg4A6fNuo_pHqPdSJQX4qJJ0-EjEPrQm/view?usp=sharing}{Link}
+  \item \textbf{Sanjoy Kumar}, Huixin Zhan, Karl Gardner, Travis Thompson, Wei Kei, Yifan Wang ``Classification of Circulating Tumor Cells Using Machine Learning on Microfluidic Trajectory Data'', \textit{2025 17th International Conference on Machine Learning and Computing, Paper ID 4170, 2024, J. ACM, Vol. 37, No. 4, Article 111.} \lk{https://link.springer.com/chapter/10.1007/978-3-031-94898-5_34}{Link}
+  \item Rifat Rejuan; Eugenio Aulisa; Wei Li; Travis Thompson; \textbf{Sanjoy Kumar}; Suncica Canic; Yifan Wang, ``Validation of a Microfluidic Device Prototype for Cancer Detection and Identification: Circulating Tumor Cells Classification Based on Cell Trajectory Analysis Leveraging Cell-Based Modeling and Machine Learning'', \textit{International Journal for Numerical Methods in Biomedical Engineering, Volume 41, Issue 4, 2025.} \lk{https://doi.org/10.1002/cnm.70037}{Link}
+  \item Egharevba, Lawrence; \textbf{Kumar, Sanjoy}; Amini, Hadi; Adjouadi, Malek; Rishe, Naphtali ``Detecting and Removing Clouds Affected Regions from Satellite Images Using Deep Learning'', \textit{IPSI Transactions on Internet Research, vol. 19(2), pp. 13-23, 2023.} \lk{https://doi.org/10.58245/ipsi.tir.2302.03}{Link}
+  \item Md. Irfanul Hasan Tusar\textsuperscript{1}*, \textbf{Sanjoy Kumar}\textsuperscript{2}, K.M.E. Hasan\textsuperscript{3} and Md. Shahid Iqbal\textsuperscript{4} ``IoT Based Health Monitoring System in Case of Older \& Infectious Diseases in Bangladesh.'' \textit{6th International Conference on Engineering Research, Innovation and Education School of Applied sciences \& Technology, SUST, Sylhet, ICEIRE 2021} \lk{https://drive.google.com/file/d/15x1p7n6dDvtg2hj9ObGUxymlGAqeHCxi/view?usp=sharing}{Link}
+  \item \textbf{Sanjoy Kumar} and Gautam Srivastava, ``AXAI-MH: An Adaptive Context-Sensitive Explainable AI Framework for Personalized Mental Health Risk Assessment.'' \textit{IEEE Transactions on Computational Social Systems, Paper No. TCSS-2025-07-1320.} \lk{https://drive.google.com/file/d/1r5o2D66ZTg2VrMklkl8sxKoeGuwLQEVY/view?usp=sharing}{Link}
+  \item \textbf{Sanjoy Kumar} and Gautam Srivastava, ``Multimodal Knowledge Augmented Narrative Driven Unified Recommendation System.'' \textit{IEEE Transactions on Computational Social Systems, Paper No. TCSS-2025-06-1183.} [Peer Reviewed] \lk{https://drive.google.com/file/d/1NxOR6ds-d3xFB5gi_pmYLFTv_YaVoGMo/view?usp=sharing}{Link}
+  \item \textbf{Sanjoy Kumar} and Gautam Srivastava, Senior Member, IEEE, ``AutoMaterialize: LLM-Powered Automated Materialized View with Schema-Guided in-Context Learning Optimization for Analytical Workloads. \lk{https://drive.google.com/file/d/1ueDIfEE3TNvnEfAcWhqCBkrGW8HlX74C/view?usp=sharing}{Link}
+  \item \textbf{Sanjoy Kumar}, ``DeepSQL-R1: A Quantized LLM for High-Performance and Reinforcement Driven NL2SQL Generation'', \textit{figshare. Journal contribution. \href{https://doi.org/10.6084/m9.figshare.28330301.v1}{https://doi.org/10.6084/m9.figshare.28330301.v1}} \lk{https://figshare.com/articles/journal_contribution/DeepSQL-R1_A_Quantized_LLM_for_High-Performance_and_Reinforcement_Driven_NL2SQL_Generation/28330301/1?file=52091795}{Link}
+\end{itemize}
+
+%================ RESEARCH REPORT ================
+\section{Research Report}
+\begin{itemize}
+  \item Dr Ananya Raihan, Asif Ayon, \textbf{Sanjoy Kumar} ``Research Report: Skills and Employments for the Future in Bangladesh.'' \textit{Economic Intelligence Bangladesh, Powered by The Business Standard, 2024} \lk{https://intel.tbsnews.net/issue-2/\#:~:text=SHIFT\%20IN\%20JOB,Kumar\%20from\%20DataSense}{Link}
+  \item Report: State of Work in Bangladesh Gig Economy \& Digital labor Platforms. Fairwork Bangladesh Ratings 2022 Report, 2023 \lk{https://fair.work/wp-content/uploads/sites/17/2022/10/Fairwork-Bangladesh-Ratings-2022-FINAL-REPORT.pdf}{Link} Collaboration: University of Oxford (Oxford Internet Institute), DataSense (iSocial Limited, Bangladesh)
+  \item \textbf{Sanjoy Kumar}, ``Research Project: Yield Curve as Recession Indicator in the Framework of Machine Learning.'' \#\textit{2,173 in Education Theory Research, ASIN: B09BLBYBBG, Amazon Kindle Publisher, 2022} \lk{https://www.amazon.com/Recession-Indicator-framework-Machine-Learning-ebook/dp/B09BLBYBBG/ref=sr_1_5?qid=1655359228&refinements=p_27\%3ASanjoy+Kumar&s=digital-text&sr=1-5&text=Sanjoy+Kumar}{Link}
+  \item Sanjoy Kumar, Performance Improvement of a Diesel Engine Power Plant with Optimal Utilization. ASIN: B082VJCXDL, Amazon Kindle Publisher, 2023 \lk{https://www.amazon.com/Performance-Improvement-Diesel-Optimal-utilization-ebook/dp/B082VJBXDL/ref=sr_1_9?dib=eyJ2IjoiMSJ9.NF2a3FWT6lEDjeN_mcFz2POLADdmM5fFfb4xCSSWdUwyAI2oPvjf5l5ds_TgdwZ72JEb9H0Ntn7Dckb6EYIIXafyZ6LysJNWY8ln1vvQWdose4EXlDMD_PEifm6yBGbnaRDxfMy0k3vfC95McbA853mBqThpmafT_BVKBKi1W4FexL-ws76ECRBRqj20cDsvZVyOW7NrB3cdMDsW2uTXQ0GvPEsjJYz-if_fN5GFoeM.CV7meWIfAHGo1M5FA24zyB4JOpnCFAK1MzzoynKRdf4&dib_tag=se&qid=1716931223&refinements=p_27\%3ASanjoy+Kumar&s=digital-text&sr=1-9&text=Sanjoy+Kumar}{Link}
+\end{itemize}
+
+%================ BOOKS ================
+\section{Books Publication}
+\textbf{[1]} Arduino-Based Embedded Systems: Development and Maintenance, 2018 \lk{https://www.amazon.com/Troubleshooting-Maintaining-Arduino-Upgrading-Project-ebook/dp/B081G9RJPL/ref=sr_1_12?qid=1655360741&refinements=p_27\%3ASanjoy+Kumar&s=digital-text&sr=1-12&text=Sanjoy+Kumar}{Link}, \textbf{Author:} Sanjoy Kumar, \textbf{ASIN:} B081G9RJPL\par
+\textbf{[2]} Device Integrated Dart Programming Language for Beginner, 2019 \lk{https://www.amazon.com/dp/B08174FM7Q}{Link}, \textbf{Author:} Sanjoy Kumar, \textbf{ASIN:} B08174FM7Q\par
+\textbf{[3]} GIT: A Distributed Version Control System, 2019 \lk{https://www.amazon.com/dp/B083TZR9KK}{Link}, \textbf{Author:} Sanjoy Kumar, \textbf{ASIN:} B083TZR9KK\par
+
+%================ SKILLS ================
+\section{Skills}
+\begin{itemize}
+  \item \textbf{Programming:} Python, C++, Matlab, Verilog, VHDL
+  \item \textbf{AI \& Machine Learning:} PyTorch, Tensorflow, JAX, Keras, Scikit-learn, Deep learning, Reinforcement learning, MLOps
+  \item \textbf{Hardware \& Embedded System}: Microcontrollers, PCB Design (SPICE/Altium), Peripheral Interfacing, NVIDIA Jetson, Hardware-Software Integration, CUDA, GPU Computing, Sensor Interface Design, Embedded AI
+  \item \textbf{Robotics Technique \& Simulation}: ROS 2, Gazebo, NVIDIA ISAAC Sim, PCL, 3D Computer Vision, Control theory, Sensor Fusion, State Estimation, Motion Planning, Model Predictive Control, kalman Filtering
+  \item \textbf{Computer Vision \& Signal Processing}: OpenCV, Open3D, Image Processing, Signal Processing, Point-Cloud Processing
+  \item \textbf{Scientific Computing}: Physics-Informed Neural Network, DeepONET, Neural ODE, Differentiable Physics, PDEs, FEniCS
+  \item \textbf{Generative AI}: LLM fine-tuning, RAG, Multi-agent workflow, Langchain, MCP, LLMOps, Scale AI Product, Agent Deployment
+  \item \textbf{Tools}: LaTex, Linux OS, ParaView, Git/Github, Docker
+  \item \textbf{Functional Skills}: Project Management, Research \& Facilitations, Documentation, Report Writing, Research Proposal Writing
+\end{itemize}
+
+%================ ENTREPRENEURSHIP ================
+\section{Entrepreneurship \& Startup Experience}
+\textbf{Movmi: AI Powered 3D Motion Capture and Animation} \textbf{Creator} \lk{https://movmi.co/}{Link}, Accepted by NVIDIA Inception \& Microsoft Startups Program\par
+\textbf{Role}: Co-founder \& Chief Technology Officer (CTO), 2020--2024, \textbf{Total Users:} 12000+,\par
+\vspace{2pt}
+\textbf{Scholyx: AI Lens for Research Automation} [Acquired by Ilapata Tech Inc] \lk{https://scholyx.com/}{Link}\par
+Role: Co-founder \& Chief Executive Officer (CEO), 2024--2026\textbf{, Total Users:} 18000+\par
+
+%================ LEADERSHIP ================
+\section{Leadership \& Extracurricular}
+\entry{Program Operator, \textit{\normalfont International Labor Organization, Bangladesh Gig Economy, DataSense, iSocial Limited}}{2023}
+\entry{Program Research Executive, \textit{\normalfont SEC Robotics Lab}, Sylhet Engineering College, SUST}{2020--2021}
+\entry{Program Coordinator (Sponsors, Events), \textit{\normalfont SEC Robotics \& Tech Contest Program, Dept of EEE, SEC, SUST}}{2018--2019}
+\entry{Program Coordinator, \textit{\normalfont Inter University Programming Contest, SEC, SUST}}{2017}
+\entry{Scout Leader (School), \textit{\normalfont National School Organization Bangladesh}}{2006--2011}
+
+%================ AWARDS ================
+\section{Award \& Honors}
+\entry{Fellowship: TTU Talkington End GRAD Sch, \textit{\normalfont Texas Tech University}}{2026--2027}
+\entry{Fellowship: TTU Hutcheson Grad End AS Sch, \textit{\normalfont Texas Tech University}}{2026--2027}
+\entry{Employee of The Month (2 Times), \textit{\normalfont Bista Solutions Inc (Bangladesh Office)}}{2024--2025}
+\entry{University Merit Scholarship, \textit{\normalfont Sylhet Engineering College, Shahjalal University of Science \& Technology}}{2016--2020}
+\entry{Bangladesh National Mathematics Olympiad, \textit{\normalfont Participant, Final Round, 2016}}{2016}
+\entry{Inter University Robotics Competition, North South University, \textit{\normalfont 3\textsuperscript{rd} Place}}{2018}
+\entry{Honorable Mention for extraordinary academic and extracurricular activities, \textit{\normalfont Govt K.M.H. Degree College, Jhenaidah}}{2015}
+\entry{National Talent Pool Scholarship, Junior School Certificate Exam, \textit{\normalfont Board of Intermediate \& Secondary Education, Bangladesh}}{2010}
+\entry{Prothom Alo Merit Scholarship Award, Bangladesh, \textit{\normalfont Board of Primary School Certificate, Prothom Alo, Bangladesh}}{2007}
+
+%================ HACKATHONS ================
+\section{Hackathons and Contests}
+\textbf{[1]} Gemini API Developer Competition, Google, \textit{2024} \lk{https://ai.google.dev/competition/projects/guaridan-ai?hl=en}{Submission}\par
+\textbf{[2]} Hello GPT-4o AI Challenge, \textit{2024} \lk{https://lablab.ai/event/hello-gpt-4o-ai-challenge/scholarintel/scholarintel-intel-decision-making-for-scholar}{Submission}\lk{https://lablab.ai/u/@imsanjoykb/clxuej7nk000a7470txztkzf9}{Certification}\par
+\textbf{[3]} Benin Multimodal AI Hackathon, \textit{2024} \lk{https://lablab.ai/event/benin-multimodal-ai-hackathon/sanjoy-kumar/vocalytics-intelligence-speech-transformation}{Submission}\lk{https://lablab.ai/u/@imsanjoykb/clxaxqk7i002e74gergit5pwp}{Certification}\par
+\textbf{[4]} One Trillion Agents Hackathon 2025 \lk{https://devpost.com/software/marketiq-amplify-marketing-brainpower-dhaj9q\#updates}{Submission}\par
+\textbf{[5]} COLAB Ventures: Bridging Business \& Computing, 2025 \lk{https://devpost.com/software/marketiq-amplify-marketing-brainpower-ul79r5?ref_content=my-projects-tab&ref_feature=my_projects}{Submission}\par
+\textbf{[6]} DeveloperWeek 2025 Hackathon, 2025 \lk{https://devpost.com/software/space-agent?ref_content=my-projects-tab&ref_feature=my_projects}{Submission}\par
+\textbf{[7]} CogX AI Fest-11Labs Hackathon, \textit{Rank: 2\textsuperscript{nd} Place (Silver Medal)}, \textit{2024} \lk{https://lablab.ai/u/@imsanjoykb/clvwfkb7y000f13tzek3obwoy}{Certification}\par
+\textbf{[8]} TechnoVenza: Inter University Tech Contest, \textit{Rank: 4\textsuperscript{th} Place (App Development)}, \textit{2019}\par
+\textbf{[9]} SEC Inter University Programming Contest, \textit{Rank: 9\textsuperscript{th} place}, \textit{2016}\par
+\textbf{[10]} Bangladesh National Mathematics Olympiad: \textit{Participant, Final Round, 2016}\par
+
+%================ OPEN SOURCE ================
+\section{OpenSource AI Models and Packages (Creator)}
+\textbf{[1]} AI Model: DeepSql-R1-Distil-8B \lk{https://doi.org/10.57967/hf/10288}{Link} Download: 872. \hfill \textbf{[2]} AI Model: SQLCoder-Qwen2.5-8bit \lk{https://doi.org/10.57967/hf/4444}{Link} Download: 1515\par
+\textbf{[3]} AI Model: Text2OrmQuery-40B-8bit \lk{https://doi.org/10.57967/hf/10289}{Link} Download: 254 \hfill \textbf{[4]} AI Model: Odoo-ORM-v1-24B-fp32 \lk{https://doi.org/10.57967/hf/10290}{Link} Download: 365\par
+\textbf{[5]} Package: MCPresso: Brew MCP Server Under 30 Seconds \lk{https://pypi.org/project/mcpresso/}{Package} \lk{https://github.com/imsanjoykb/mcpresso}{Code}\par
+\textbf{[6]} Package: Agents-Driftguard: A State-Aware Rollback and Replanning Auto Agents \lk{https://pypi.org/project/agents-driftguard/1.1.0/}{Package} \lk{https://github.com/imsanjoykb/agents-driftguard}{Code}\par
+
+%================ BLOGS ================
+\section{Technical Blogs}
+\textbf{[1]} Adaptive Control: How Robots Can Adjust to Changing Environments \lk{https://medium.com/@imsanjoykb/adaptive-control-how-robots-can-adjust-to-changing-environments-57d5705e28e3}{Link}\par
+\textbf{[2]} Kalman Filters: The Mathematics Behind Robot State Estimation \lk{https://medium.com/@imsanjoykb/2d5029b8a58a}{Link}\par
+\textbf{[3]} Reasoning-Intensive Retrieval in Agentic RAG: Dynamic, Reasoning-Aware Info Retrieval. \lk{https://medium.com/@imsanjoykb/reasoning-intensive-retrieval-in-agentic-rag-dynamic-reasoning-aware-information-retrieval-ff216da9ffef}{Link}\par
+\textbf{[4]} GraphRAG: Bridging the Gap Between Knowledge Graphs and GenAI for Improved Contextual Understanding \lk{http://medium.com/@imsanjoykb/graphrag-bridging-the-gap-between-knowledge-graphs-and-genai-for-improved-contextual-understanding-a508fea238ce}{Link}\par
+\textbf{[5]} Protecting Privacy: Hide Sensitive Data Before Feeding It to LLMs. \lk{https://medium.com/@imsanjoykb/protecting-privacy-hide-sensitive-data-before-feeding-it-to-llms-6e0b6817a7b9}{Link}\par
+
+%================ COURSES ================
+\section{Educational Courses Online Instructor}
+\textbf{[1]} Full-Stack Machine Learning and Data Science \lk{https://www.youtube.com/watch?v=2Y372E-Pje4&list=PLw3QFYXl64bg6yi3ISs-PRG_YgBK4IUVQ}{Link} \hfill \textbf{[2]} Communication System Lab Course \lk{https://www.youtube.com/watch?v=kX384Gzqbf8&list=PLw3QFYXl64bjbtfuO1Be06Yb9HQMJTdcP}{Link}\par
+\textbf{[3]} Digital Electronic Lab Course \lk{https://www.youtube.com/watch?v=RbC8MWOONn8&list=PLw3QFYXl64bjjXqREa9sjWjtsUJ2ZsAmB}{Link} \hfill \textbf{[4]} Signals and Linear Systems Course \lk{https://www.youtube.com/watch?v=4G5aj3SbGLw&list=PLw3QFYXl64bhuh7u5MjUD_CMS6tlIXV5U}{Link}\par
+\textbf{[5]} Robotics Simulations Course \lk{https://www.youtube.com/watch?v=2tXBcxY3k1M&list=PLw3QFYXl64bir5ASIh3-H9CeBFMOx3hXo}{Link} \hfill \textbf{[6]} Materials Science and Engineering Course \lk{https://www.youtube.com/watch?v=Gm8KsHsEf04&list=PLw3QFYXl64bhqowZPyR8mr-qVoT-8NDog}{Link}\par
+
+%================ REFERENCES ================
+\section{References}
+\noindent
+\begin{minipage}[t]{0.48\linewidth}
+\textbf{Dr. Yifan Wang}\\[2pt]
+Assistant Professor, Dept of Mathematics and Statistics\\
+Texas Tech University\\
+Email: \href{mailto:yifan.wang@ttu.edu}{yifan.wang@ttu.edu} Office: Math 227 $\bullet$ Lubbock, TX
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\textbf{Dr. Gautam Srivastava}\\[2pt]
+Professor, Department of Mathematics \& Computer Science\\
+Brandon University (BU), Canada\\
+Email: \href{mailto:srivastavag@brandonu.ca}{srivastavag@brandonu.ca} Office: 270 18th Street \mbox{Brandon}
+\end{minipage}
+
+\end{document}
